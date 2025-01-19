@@ -1,3 +1,11 @@
 from flask import Flask, jsonify
 
-app = Flask
+app = Flask(__name__)
+
+# Test route
+@app.route('/')
+def home():
+    return jsonify({'message': "Lou's List App is Running!"})
+
+if __name__ == '__main__':
+    app.run(host = '0.0.0.0', port = 800)
