@@ -1,6 +1,11 @@
-Flask
-requests
-pandas
-mysql-connector-python
-python-dotenv
-flasgger
+blinker==1.9.0
+click==8.1.8
+flasgger==0.9.7.1
+Flask==3.1.0
+itsdangerous==2.2.0
+numpy==2.0.2
+pandas==2.2.3
+python-dotenv==1.0.1
+pytz==2024.2
+tzdata==2024.2
+Werkzeug==3.1.3
