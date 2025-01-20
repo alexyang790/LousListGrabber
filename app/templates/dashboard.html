@@ -4,21 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lou's List Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Lou's List Dashboard</h1>
-    <form action="/dashboard" method="get">
-        <label for="query">Search:</label>
-        <input type="text" id="query" name="query" required>
-        <button type="submit">Search</button>
-    </form>
-    {% if results %}
-        <h2>Search Results:</h2>
-        <ul>
-            {% for result in results %}
-                <li>{{ result }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+    <div class="container mt-4">
+        <h1 class="mb-3">Lou's List Dashboard</h1>
+
+        <!-- Search Bar -->
+        <input id="searchInput" class="form-control mb-3" type="text" placeholder="Enter a keyword to search...">
+        <button id="searchButton" class="btn btn-primary mb-3">Search</button>
+
+        <!-- Results Table -->
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr id="tableHeader">
+                    <!-- Headers will be dynamically added -->
+                </tr>
+            </thead>
+            <tbody id="resultsTable">
+                <!-- Results will be dynamically added -->
+            </tbody>
+        </table>
+
+        <!-- Download Buttons -->
+        <div>
+            <a id="downloadCsv" class="btn btn-success" href="#" role="button">Download CSV</a>
+            <a id="downloadJson" class="btn btn-info" href="#" role="button">Download JSON</a>
+        </div>
+    </div>
+
+    <script>
+        const searchButton = document.getElementById('searchButton');
+        const searchInput = document.getElementById('searchInput');
+        const resultsTable = document.getElementById('resultsTable');
+        const tableHeader = document.getElementById('tableHeader');
+        const downloadCsv = document.getElementById('downloadCsv');
+        const downloadJson = document.getElementById('downloadJson');
+
+        searchButton.addEventListener('click', async () => {
+            const query = searchInput.value.trim();
+            if (!query) {
+                alert('Please enter a search keyword.');
+                return;
+            }
+
+            const response = await fetch(`/search/${query}`);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.results.length > 0) {
+                    // Clear existing table content
+                    resultsTable.innerHTML = '';
+                    tableHeader.innerHTML = '';
+
+                    // Add table headers dynamically
+                    const headers = Object.keys(data.results[0]);
+                    headers.forEach(header => {
+                        const th = document.createElement('th');
+                        th.textContent = header;
+                        tableHeader.appendChild(th);
+                    });
+
+                    // Populate table rows dynamically
+                    data.results.forEach(row => {
+                        const tr = document.createElement('tr');
+                        headers.forEach(header => {
+                            const td = document.createElement('td');
+                            td.textContent = row[header];
+                            tr.appendChild(td);
+                        });
+                        resultsTable.appendChild(tr);
+                    });
+
+                    // Update download links
+                    downloadCsv.href = `/search/${query}?format=csv`;
+                    downloadJson.href = `/search/${query}?format=json`;
+                } else {
+                    resultsTable.innerHTML = '<tr><td colspan="100%">No matching results found.</td></tr>';
+                }
+            } else {
+                alert('Error fetching search results. Please try again.');
+            }
+        });
+    </script>
 </body>
 </html>

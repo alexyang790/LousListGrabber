@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request, render_template
 from app.services import fetch_data_service, search_data_service, display_sample_data, get_csv_service
 from flasgger import Swagger, swag_from
 
@@ -101,6 +101,17 @@ def get_csv():
 })
 def search_data(query):
     return search_data_service(query)
+
+@routes.route('/dashboard')
+@swag_from({
+    'responses': {
+        200: {
+            'description': 'Render the dashboard page.'
+        }
+    }
+})
+def dashboard():
+    return render_template('dashboard.html')
 
 # Function to initialize routes in the app
 def init_routes(app):

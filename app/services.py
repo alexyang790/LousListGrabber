@@ -74,31 +74,42 @@ def get_csv_service():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-def search_data_service(query):
+def search_data_service(query, return_format=None):
     try:
-        if not query:
-            return jsonify({"error": "Query parameter is required."}), 400
-
-        # Load the CSV file
         file_name = os.path.join(os.getcwd(), 'data.csv')
         data = pd.read_csv(file_name)
 
         # Perform a case-insensitive search across all columns
-        results = data.apply(lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1)
+        results = data.apply(
+            lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1)
         matching_data = data[results]
 
-        # Replace NaN with None (JSON `null`)
+        if matching_data.empty:
+            return jsonify({"results": []}), 200
+
+        if return_format == 'csv':
+            # Return CSV file for download
+            csv_io = io.StringIO()
+            matching_data.to_csv(csv_io, index=False)
+            csv_io.seek(0)
+            return send_file(
+                io.BytesIO(csv_io.getvalue().encode('utf-8')),
+                mimetype='text/csv',
+                as_attachment=True,
+                download_name='search_results.csv'
+            )
+
+        # Replace NaN values with None for JSON compatibility
         matching_data = matching_data.where(pd.notnull(matching_data), None)
 
-        # Convert the results to JSON
-        matching_data_json = matching_data.to_dict(orient='records')
+        if return_format == 'json':
+            # Convert DataFrame to JSON and return
+            return jsonify({"results": matching_data.to_dict(orient='records')}), 200
 
-        if matching_data_json:
-            return jsonify({"results": matching_data_json})
-        else:
-            return jsonify({"message": "No matching results found."})
+        # Default to JSON (remove NaN values as well)
+        return jsonify({"results": matching_data.to_dict(orient='records')}), 200
 
     except FileNotFoundError:
-        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+        return jsonify({"error": "Data not found. Please fetch it first."}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
