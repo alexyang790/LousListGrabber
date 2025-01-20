@@ -1,0 +1,248 @@
+from flask import Flask, jsonify, render_template, request
+import requests
+import json
+import pandas as pd
+import mysql.connector
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Database configuration from .env
+db_config = {
+    "host": os.getenv("DB_HOST", "localhost"),
+    "user": os.getenv("DB_USER", "root"),
+    "password": os.getenv("DB_PASSWORD", "rootpassword"),
+    "database": os.getenv("DB_NAME", "louslist")
+}
+
+app = Flask(__name__)
+
+# Test route
+@app.route('/')
+def home():
+    return jsonify({'message': "Lou's List App is Running!"})
+
+    
+
+# Fetch Route
+@app.route('/fetch')
+def fetch_data():
+    url = 'https://louslist.org/deliverData.php'
+    form_data = {"Group": "CS", "Semester": "1252", "Extended": "Yes"}
+
+    try:
+        response = requests.post(url, data=form_data)
+        response.raise_for_status()
+
+        # Save the data as a CSV file
+        file_name = 'data.csv'
+        with open(file_name, 'wb') as f:
+            f.write(response.content)
+
+        return jsonify({"message": f"Data fetched successfully and saved as {file_name}"})
+    except requests.exceptions.RequestException as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/data')
+def display_data():
+    try:
+        data = pd.read_csv('data.csv')
+        sample_data = data.head().to_dict(orient='records')
+        return jsonify({"message": "Data loaded successfully!", "data": sample_data})
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/search/<query>')
+def search_data(query):
+    try:
+        if not query:
+            return jsonify({"error": "Query parameter is required."}), 400
+
+        data = pd.read_csv('data.csv')
+        results = data.apply(lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1)
+        matching_data = data[results].to_dict(orient='records')
+        return jsonify({"results": matching_data}) if matching_data else jsonify({"message": "No matching results found."})
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/create_table')
+def create_table():
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS courses (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                course_code VARCHAR(50),
+                title VARCHAR(255),
+                instructor VARCHAR(255),
+                schedule VARCHAR(255),
+                room VARCHAR(255)
+            )
+        """)
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return jsonify({"message": "Table created successfully!"})
+    except mysql.connector.Error as e:
+        return jsonify({"error": f"MySQL error: {e}"}), 500
+    except Exception as e:
+        return jsonify({"error": f"Unexpected error: {e}"}), 500
+
+@app.route('/load_data')
+def load_data():
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+
+        data = pd.read_csv('data.csv')
+        cursor.execute("DELETE FROM courses")
+        for _, row in data.iterrows():
+            cursor.execute("""
+                INSERT INTO courses (course_code, title, instructor, schedule, room)
+                VALUES (%s, %s, %s, %s, %s)
+            """, (row['course_code'], row['title'], row['instructor'], row['schedule'], row['room']))
+
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return jsonify({"message": "Data loaded successfully!"})
+    except mysql.connector.Error as e:
+        return jsonify({"error": f"MySQL error: {e}"}), 500
+    except Exception as e:
+        return jsonify({"error": f"Unexpected error: {e}"}), 500
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=6000)
+
+
+
+
+
+
+import requests
+import pandas as pd
+from flask import jsonify, send_file, request
+import os
+import io
+
+
+def fetch_data_service():
+    try:
+        # URL to fetch data
+        url = 'https://louslist.org/deliverData.php'
+        form_data = {
+            "Group": "CS",
+            "Semester": "1252",
+            "Extended": "Yes",
+        }
+
+        # Fetch the data
+        response = requests.post(url, data=form_data)
+        response.raise_for_status()  # Raise an error for HTTP errors
+
+        # Read the CSV data into a DataFrame
+        df = pd.read_csv(io.StringIO(response.text))
+
+        # Store the DataFrame into a CSV file
+        csv_file_path = os.path.join(os.getcwd(), 'data.csv')  # Unified file name
+        df.to_csv(csv_file_path, index=False)
+
+        # Return a success message
+        return jsonify({"message": "Data fetched and stored successfully", "file_path": csv_file_path}), 200
+
+    except requests.exceptions.RequestException as e:
+        # Handle request-related exceptions
+        return jsonify({"error": f"Failed to fetch data due to network issue: {str(e)}"}), 500
+    except pd.errors.ParserError as e:
+        # Handle errors in parsing the CSV
+        return jsonify({"error": f"Failed to parse the fetched data: {str(e)}"}), 500
+    except Exception as e:
+        # Catch-all for other exceptions
+        return jsonify({"error": f"An unexpected error occurred: {str(e)}"}), 500
+
+
+def display_sample_data():
+    try:
+        # File path for the data file
+        file_name = os.path.join(os.getcwd(), 'data.csv')
+
+        # Check if the file exists
+        if not os.path.exists(file_name):
+            raise FileNotFoundError
+
+        # Load a sample of the data
+        sample_data = pd.read_csv(file_name).head(10)  # Display the first 10 rows
+
+        # Convert the sample data to JSON
+        sample_data_json = sample_data.to_dict(orient='records')
+
+        # Return the sample data
+        return jsonify({"sample_data": sample_data_json}), 200
+
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": f"An unexpected error occurred: {str(e)}"}), 500
+
+
+def get_csv_service():
+    try:
+        file_name = os.path.join(os.getcwd(), 'data.csv')
+
+        # Check if the file exists
+        if not os.path.exists(file_name):
+            raise FileNotFoundError
+
+        # Send the file as an attachment
+        return send_file(file_name, as_attachment=True)
+
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": f"An unexpected error occurred: {str(e)}"}), 500
+
+
+def search_data_service(query):
+    try:
+        # Get the query parameter from the request
+        query = request.args.get("query", default=None, type=str)
+
+        if not query:
+            return jsonify({"error": "Query parameter is required."}), 400
+
+        # File path for the data file
+        file_name = os.path.join(os.getcwd(), 'data.csv')
+
+        # Check if the file exists
+        if not os.path.exists(file_name):
+            raise FileNotFoundError
+
+        # Load the CSV file
+        data = pd.read_csv(file_name)
+
+        # Perform a case-insensitive search across all columns
+        results = data.apply(lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1)
+        matching_data = data[results]
+
+        # Replace NaN with None (JSON `null`)
+        matching_data = matching_data.where(pd.notnull(matching_data), None)
+
+        # Convert the results to JSON
+        matching_data_json = matching_data.to_dict(orient='records')
+
+        if matching_data_json:
+            return jsonify({"results": matching_data_json}), 200
+        else:
+            return jsonify({"message": "No matching results found."}), 200
+
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": f"An unexpected error occurred: {str(e)}"}), 500
