@@ -39,12 +39,25 @@ def search_data_service(query):
         if not query:
             return jsonify({"error": "Query parameter is required."}), 400
 
+        # Load the CSV file
         file_name = 'data/data.csv'
         data = pd.read_csv(file_name)
-        results = data.apply(lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1)
-        matching_data = data[results].to_dict(orient='records')
 
-        return jsonify({"results": matching_data}) if matching_data else jsonify({"message": "No matching results found."})
+        # Perform a case-insensitive search across all columns
+        results = data.apply(lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1)
+        matching_data = data[results]
+
+        # Replace NaN with None (JSON `null`)
+        matching_data = matching_data.where(pd.notnull(matching_data), None)
+
+        # Convert the results to JSON
+        matching_data_json = matching_data.to_dict(orient='records')
+
+        if matching_data_json:
+            return jsonify({"results": matching_data_json})
+        else:
+            return jsonify({"message": "No matching results found."})
+
     except FileNotFoundError:
         return jsonify({"error": "No data found. Please fetch data first!"}), 404
     except Exception as e:
