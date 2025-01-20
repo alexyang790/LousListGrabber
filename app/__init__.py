@@ -1,8 +1,11 @@
 from flask import Flask
-from app.routes import init_routes
+from flasgger import Swagger
 
 def create_app():
     app = Flask(__name__)
+
+    # Initialize Swagger
+    Swagger(app)
 
     # Register routes
     from app.routes import init_routes
