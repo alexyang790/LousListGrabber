@@ -1,6 +1,19 @@
 import requests
 import pandas as pd
-from flask import jsonify
+from flask import jsonify, send_file
+import json
+
+def get_headers():
+    url = 'http://httpbin.org/user-agent'
+    try:
+        r = requests.get(url)
+        r.raise_for_status()  # Raise an HTTPError for bad responses
+        myjson = r.json()
+        useragent = myjson.get('user-agent', 'default-user-agent')
+        return {'User-Agent': useragent}
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching headers: {e}")
+        return None
 
 def fetch_data_service():
     url = 'https://louslist.org/deliverData.php'
@@ -9,9 +22,12 @@ def fetch_data_service():
         "Semester": "1252",
         "Extended": "Yes",
     }
+    headers = get_headers()
+    if not headers:
+        return jsonify({"error": "Failed to fetch headers"}), 500
 
     try:
-        response = requests.post(url, data=form_data)
+        response = requests.post(url, data=form_data, headers=headers)
         response.raise_for_status()
 
         # Save the data as a CSV file
@@ -21,7 +37,11 @@ def fetch_data_service():
 
         return jsonify({"message": f"Data fetched successfully and saved as {file_name}"})
     except requests.exceptions.RequestException as e:
-        return jsonify({"error": str(e)}), 500
+        print(f"Request error: {e}")
+        return jsonify({"error": "Error fetching data"}), 500
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return jsonify({"error": "Internal Server Error"}), 500
 
 def display_sample_data():
     try:
@@ -29,6 +49,15 @@ def display_sample_data():
         data = pd.read_csv(file_name)
         sample_data = data.head().to_dict(orient='records')
         return jsonify({"message": "Data loaded successfully!", "data": sample_data})
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+def get_csv_service():
+    try:
+        file_name = 'data.csv'
+        return send_file(file_name, as_attachment=True)
     except FileNotFoundError:
         return jsonify({"error": "No data found. Please fetch data first!"}), 404
     except Exception as e:
