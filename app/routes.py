@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request, render_template
 from app.services import fetch_data_service, search_data_service, display_sample_data, get_csv_service, advanced_search_service
-from flasgger import Swagger, swag_from
+from flasgger import swag_from
 
 # Create a blueprint for routes
 routes = Blueprint("routes", __name__)
@@ -76,9 +76,6 @@ def display_data():
     'responses': {
         200: {
             'description': 'Download the entire CSV file.',
-            'content': {
-                'text/csv': {}
-            }
         },
         404: {
             'description': 'CSV file not found. Fetch data first.',
@@ -112,21 +109,12 @@ def get_csv():
             'in': 'path',
             'type': 'string',
             'required': True,
-            'description': 'Format of the response: "json" or "csv".'
+            'description': "Response format: 'json' or 'csv'."
         }
     ],
     'responses': {
         200: {
             'description': 'Search results in the specified format.',
-            'content': {
-                'application/json': {
-                    'example': {
-                        'results': [
-                            {'column1': 'value1', 'column2': 'value2'}
-                        ]
-                    }
-                }
-            }
         },
         404: {
             'description': 'CSV file not found. Fetch data first.',
@@ -147,7 +135,7 @@ def search_data(query, return_format):
         in: path
         type: string
         required: true
-        description: Response format: "json" or "csv".
+        description: "Response format: 'json' or 'csv'."
     responses:
       200:
         description: Filtered search results in the requested format.
@@ -189,21 +177,12 @@ def dashboard():
             'in': 'path',
             'type': 'string',
             'required': True,
-            'description': 'Format of the response: "json" or "csv".'
+            'description': "Response format: 'json' or 'csv'."
         }
     ],
     'responses': {
         200: {
             'description': 'Filtered results for OFS-specific columns in the specified format.',
-            'content': {
-                'application/json': {
-                    'example': {
-                        'results': [
-                            {'ClassNumber': '12345', 'Days1': 'MWF', 'Enrollment': 25, 'MeetingDates1': '2023-01-15 to 2023-05-15', 'Room1': 'CHEM 101', 'Type': 'Lecture'}
-                        ]
-                    }
-                }
-            }
         },
         404: {
             'description': 'No matching results found or data file not available.',
@@ -224,7 +203,7 @@ def advanced_search_ofs(query, return_format):
         in: path
         type: string
         required: true
-        description: Response format: "json" or "csv".
+        description: "Response format: 'json' or 'csv'."
     responses:
       200:
         description: Filtered results for OFS-specific columns in the requested format.
@@ -248,21 +227,12 @@ def advanced_search_ofs(query, return_format):
             'in': 'path',
             'type': 'string',
             'required': True,
-            'description': 'Format of the response: "json" or "csv".'
+            'description': "Response format: 'json' or 'csv'."
         }
     ],
     'responses': {
         200: {
             'description': 'Filtered results for Enrollment-specific columns in the specified format.',
-            'content': {
-                'application/json': {
-                    'example': {
-                        'results': [
-                            {'ClassNumber': '12345', 'Days1': 'MWF', 'Enrollment': 25, 'EnrollmentLimit': 30, 'Status': 'Open', 'Title': 'Introduction to Data Science'}
-                        ]
-                    }
-                }
-            }
         },
         404: {
             'description': 'No matching results found or data file not available.',
@@ -283,7 +253,7 @@ def advanced_search_enrollment(query, return_format):
         in: path
         type: string
         required: true
-        description: Response format: "json" or "csv".
+        description: "Response format: 'json' or 'csv'."
     responses:
       200:
         description: Filtered results for Enrollment-specific columns in the requested format.
