@@ -8,18 +8,18 @@ services:
     depends_on:
       - db
     environment:
-      DB_HOST: db
-      DB_USER: root
-      DB_PASSWORD: root
-      DB_NAME: louslist
+      - DB_HOST=db
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
 
   db:
     image: mysql:8.0
     container_name: louslist-mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: louslist
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
     ports:
       - "3306:3306"
     volumes:

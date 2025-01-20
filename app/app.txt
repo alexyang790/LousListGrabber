@@ -1,0 +1,122 @@
+from flask import Flask, jsonify, render_template, request
+import requests
+import json
+import pandas as pd
+import mysql.connector
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Database configuration from .env
+db_config = {
+    "host": os.getenv("DB_HOST", "localhost"),
+    "user": os.getenv("DB_USER", "root"),
+    "password": os.getenv("DB_PASSWORD", "rootpassword"),
+    "database": os.getenv("DB_NAME", "louslist")
+}
+
+app = Flask(__name__)
+
+# Test route
+@app.route('/')
+def home():
+    return jsonify({'message': "Lou's List App is Running!"})
+
+    
+
+# Fetch Route
+@app.route('/fetch')
+def fetch_data():
+    url = 'https://louslist.org/deliverData.php'
+    form_data = {"Group": "CS", "Semester": "1252", "Extended": "Yes"}
+
+    try:
+        response = requests.post(url, data=form_data)
+        response.raise_for_status()
+
+        # Save the data as a CSV file
+        file_name = 'data.csv'
+        with open(file_name, 'wb') as f:
+            f.write(response.content)
+
+        return jsonify({"message": f"Data fetched successfully and saved as {file_name}"})
+    except requests.exceptions.RequestException as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/data')
+def display_data():
+    try:
+        data = pd.read_csv('data.csv')
+        sample_data = data.head().to_dict(orient='records')
+        return jsonify({"message": "Data loaded successfully!", "data": sample_data})
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/search/<query>')
+def search_data(query):
+    try:
+        if not query:
+            return jsonify({"error": "Query parameter is required."}), 400
+
+        data = pd.read_csv('data.csv')
+        results = data.apply(lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1)
+        matching_data = data[results].to_dict(orient='records')
+        return jsonify({"results": matching_data}) if matching_data else jsonify({"message": "No matching results found."})
+    except FileNotFoundError:
+        return jsonify({"error": "No data found. Please fetch data first!"}), 404
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/create_table')
+def create_table():
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS courses (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                course_code VARCHAR(50),
+                title VARCHAR(255),
+                instructor VARCHAR(255),
+                schedule VARCHAR(255),
+                room VARCHAR(255)
+            )
+        """)
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return jsonify({"message": "Table created successfully!"})
+    except mysql.connector.Error as e:
+        return jsonify({"error": f"MySQL error: {e}"}), 500
+    except Exception as e:
+        return jsonify({"error": f"Unexpected error: {e}"}), 500
+
+@app.route('/load_data')
+def load_data():
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+
+        data = pd.read_csv('data.csv')
+        cursor.execute("DELETE FROM courses")
+        for _, row in data.iterrows():
+            cursor.execute("""
+                INSERT INTO courses (course_code, title, instructor, schedule, room)
+                VALUES (%s, %s, %s, %s, %s)
+            """, (row['course_code'], row['title'], row['instructor'], row['schedule'], row['room']))
+
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return jsonify({"message": "Data loaded successfully!"})
+    except mysql.connector.Error as e:
+        return jsonify({"error": f"MySQL error: {e}"}), 500
+    except Exception as e:
+        return jsonify({"error": f"Unexpected error: {e}"}), 500
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=6000)
