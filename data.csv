@@ -168,7 +168,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 19315,ANTH,3280,001,SEM,3,Kasey Jernigan,MoWe 2:00pm - 2:50pm,New Cabell Hall 364,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Native American Studies: (Mis)Representations,,Closed,30,30,0
 12239,ANTH,3290,001,Lecture,3,Sylvia Tidey,Th 3:30pm - 6:00pm,Claude Moore Nursing Educ G010,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Biopolitics and the Contemporary Condition,,Wait List,90,90,9
 20808,ANTH,3344,001,Lecture,3,Mark Sicoli,TuTh 11:00am - 12:15pm,Brooks Hall 103,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Anthropology and Anarchy,,Closed,18,18,0
-19636,ANTH,3390,001,Lecture,3,Gertrude Fraser,TuTh 3:30pm - 4:20pm,Ridley Hall G004,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Pregnancy, Birthing and the Post-Partum",,Wait List,59,60,21
+19636,ANTH,3390,001,Lecture,3,Gertrude Fraser,TuTh 3:30pm - 4:20pm,Ridley Hall G004,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Pregnancy, Birthing and the Post-Partum",,Wait List,60,60,20
 13012,ANTH,3590,001,Lecture,3,George Mentore,TuTh 11:00am - 12:15pm,The Rotunda Room 150,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Social and Cultural Anthropology,War: A Cross-Cultural Study of Armed Conflict,Open,23,25,2
 14030,ANTH,3590,002,Lecture,3,Randall Puckett,TuTh 6:00pm - 7:15pm,Clark Hall G004,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Social and Cultural Anthropology,Anthropology of Appalachia,Open,24,25,1
 21488,ANTH,3590,003,Lecture,3,Sebastian Jackson,TuTh 11:00am - 12:15pm,John W. Warner Hall 113,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Social and Cultural Anthropology,"Race, Science, and the Law",Wait List,30,30,5
@@ -537,8 +537,8 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 13087,ARTH,2054,102,Discussion,0,Slenka Botello Gil,We 12:00pm - 12:50pm,Fayerweather Hall 215,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Roman Art and Archaeology,,Wait List,20,20,3
 21681,ARTH,2054,104,Discussion,0,Slenka Botello Gil,Mo 10:00am - 10:50am,Fayerweather Hall 215,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Roman Art and Archaeology,,Wait List,20,20,0
 21682,ARTH,2054,105,Discussion,0,Slenka Botello Gil,We 10:00am - 10:50am,Fayerweather Hall 206,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Roman Art and Archaeology,,Wait List,20,20,0
-18779,ARTH,2153,100,Lecture,4,Eric Ramirez-Weaver,TuTh 9:30am - 10:45am,Campbell Hall 160,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Romanesque and Gothic Art,,Open,57,60,0
-18781,ARTH,2153,101,Discussion,0,Catherine Fan,Mo 5:00pm - 5:50pm,Fayerweather Hall 206,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Romanesque and Gothic Art,,Open,18,20,0
+18779,ARTH,2153,100,Lecture,4,Eric Ramirez-Weaver,TuTh 9:30am - 10:45am,Campbell Hall 160,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Romanesque and Gothic Art,,Open,58,60,0
+18781,ARTH,2153,101,Discussion,0,Catherine Fan,Mo 5:00pm - 5:50pm,Fayerweather Hall 206,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Romanesque and Gothic Art,,Open,19,20,0
 18782,ARTH,2153,102,Discussion,0,Catherine Fan,We 10:00am - 10:50am,Fayerweather Hall 215,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Romanesque and Gothic Art,,Open,19,20,0
 18783,ARTH,2153,103,Discussion,0,Catherine Fan,We 11:00am - 11:50am,Fayerweather Hall 215,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Romanesque and Gothic Art,,Wait List,20,20,0
 19819,ARTH,2559,200,Lecture,3,"Anna Hogg, Rolando Vargas",Tu 3:30pm - 6:00pm,Fayerweather Hall 206,01/13/2025 - 04/29/2025,,,,,,,,,,,,,New Course in History of Art,Documentary Film & Climate Truths,Open,18,20,0
@@ -630,12 +630,12 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 11975,ASL,4993,001,IND,1 - 3,Gregory Propp,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Independent Study in American Sign Language,,Open,0,15,0
 10586,ASTR,1210,001,Lecture,3,Zhi-Yun Li,TuTh 2:00pm - 3:15pm,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to the Sky and Solar System,,Open,115,140,0
 13830,ASTR,1210,002,Lecture,3,Ilse Cleeves,TuTh 12:30pm - 1:45pm,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to the Sky and Solar System,,Open,138,140,4
-12087,ASTR,1220,001,Lecture,3,Matthew Pryal,MoWeFr 9:00am - 9:50am,Physics Bldg 242,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Introduction to Stars, Galaxies, and the Universe",,Open,27,99,0
+12087,ASTR,1220,001,Lecture,3,Matthew Pryal,MoWeFr 9:00am - 9:50am,Physics Bldg 242,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Introduction to Stars, Galaxies, and the Universe",,Open,28,99,0
 12938,ASTR,1220,002,Lecture,3,Matthew Pryal,MoWeFr 11:00am - 11:50am,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Introduction to Stars, Galaxies, and the Universe",,Open,120,140,0
 13455,ASTR,1220,003,Lecture,3,Shazrene Mohamed,MoWe 2:00pm - 3:15pm,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Introduction to Stars, Galaxies, and the Universe",,Open,120,140,0
 13457,ASTR,1220,004,Lecture,3,Maryam Modjaz,TuTh 9:30am - 10:45am,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Introduction to Stars, Galaxies, and the Universe",,Wait List,140,140,7
 13456,ASTR,1250,001,Lecture,3,Yifan Zhou,MoWeFr 9:00am - 9:50am,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Alien Worlds,,Open,103,120,3
-13898,ASTR,1280,001,Lecture,3,Paul Torrey,MoWeFr 10:00am - 10:50am,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,The Origins of Almost Everything,,Wait List,140,140,8
+13898,ASTR,1280,001,Lecture,3,Paul Torrey,MoWeFr 10:00am - 10:50am,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,The Origins of Almost Everything,,Wait List,140,140,9
 13899,ASTR,1290,001,Lecture,3,Matthew Pryal,TuTh 11:00am - 12:15pm,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Black Holes,,Wait List,140,140,4
 10587,ASTR,1610,001,Lecture,1,Edward Murphy,Tu 6:00pm - 7:15pm,Chemistry Bldg 306,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Intro to Astronomical Research for Potential Astronomy/Astrophysics Majors,,Open,24,34,0
 10588,ASTR,2120,100,Lecture,3,Bradley Johnson,MoWeFr 11:00am - 11:50am,Shannon House 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Astrophysics II,,Open,24,35,0
@@ -896,7 +896,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 12913,BIOL,3090,001,Lecture,3,Jennifer Guler,MoWeFr 11:00am - 11:50am,Chemistry Bldg 217,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Our World of Infectious Disease,,Wait List,96,96,51
 12508,BIOL,3180,001,Lecture,3,Michael Timko,TuTh 9:30am - 10:45am,John W. Warner Hall 104,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Plants and Society,,Open,30,54,0
 10595,BIOL,3240,001,Lecture,3,David Kittlesen,MoWeFr 1:00pm - 1:50pm,Ridley Hall G008,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Immunology,,Wait List,170,170,3
-11690,BIOL,3250,001,Lecture,3,Masashi Kawasaki,MoWeFr 10:00am - 10:50am,Gilmer Hall 390,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Animal Behavior,,Wait List,150,150,26
+11690,BIOL,3250,001,Lecture,3,Masashi Kawasaki,MoWeFr 10:00am - 10:50am,Gilmer Hall 390,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Animal Behavior,,Wait List,149,150,26
 13609,BIOL,3260,001,Lecture,3,Jay Hirsh,TuTh 12:30pm - 1:45pm,Gilmer Hall 257,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Editing Genes and Genomes,,Open,29,40,0
 12026,BIOL,3270,100,Lecture,4,"Ahmed Abdullah, Martin Wu",TuTh 12:30pm - 1:45pm,Minor Hall 125,01/13/2025 - 04/29/2025,,,,,,,,,,,,,General Microbiology with Laboratory,,Wait List,162,162,20
 12027,BIOL,3270,101,Laboratory,0,David Kittlesen,Mo 9:00am - 12:00pm,Gilmer Hall 335,01/13/2025 - 04/29/2025,,,,,,,,,,,,,General Microbiology with Laboratory,,Wait List,18,18,2
@@ -1610,13 +1610,13 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 12375,CHEM,2321,010,Laboratory,1,Jason Chruma,We 9:00am - 12:00pm,Chemistry Bldg Room 446,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,17,18,0
 12383,CHEM,2321,011,Laboratory,1,Jason Chruma,We 2:00pm - 5:00pm,Chemistry Bldg Room 444,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,30,32,0
 12384,CHEM,2321,012,Laboratory,1,Jason Chruma,We 2:00pm - 5:00pm,Chemistry Bldg Room 446,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Closed,32,32,0
-12732,CHEM,2321,013,Laboratory,1,Jason Chruma,Th 9:30am - 12:30pm,Chemistry Bldg Room 444,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,30,32,0
+12732,CHEM,2321,013,Laboratory,1,Jason Chruma,Th 9:30am - 12:30pm,Chemistry Bldg Room 444,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,31,32,0
 12851,CHEM,2321,014,Laboratory,1,Jason Chruma,Th 9:30am - 12:30pm,Chemistry Bldg Room 446,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,30,32,0
 12852,CHEM,2321,015,Laboratory,1,Jason Chruma,Th 2:00pm - 5:00pm,Chemistry Bldg Room 444,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,31,32,1
 12853,CHEM,2321,016,Laboratory,1,Jason Chruma,Th 2:00pm - 5:00pm,Chemistry Bldg Room 446,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Closed,32,32,0
 14743,CHEM,2321,017,Laboratory,1,Jason Chruma,Fr 9:00am - 12:00pm,Chemistry Bldg Room 444,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,12,32,0
 19758,CHEM,2321,019,Laboratory,1,Jason Chruma,Fr 2:00pm - 5:00pm,Chemistry Bldg Room 444,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,29,32,1
-19759,CHEM,2321,020,Laboratory,1,Jason Chruma,Fr 2:00pm - 5:00pm,Chemistry Bldg Room 446,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,29,32,0
+19759,CHEM,2321,020,Laboratory,1,Jason Chruma,Fr 2:00pm - 5:00pm,Chemistry Bldg Room 446,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chem Lab II for Non-Chemistry Majors/Minors,,Open,28,32,0
 10605,CHEM,2420,100,Lecture,3,Alicia Frantz,MoWeFr 9:00am - 9:50am,Physics Bldg 338,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chemistry II,,Wait List,100,85,3
 10606,CHEM,2420,101,Discussion,0,Alicia Frantz,We 6:30pm - 8:30pm,Physics Bldg 238,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chemistry II,,Wait List,99,85,3
 12483,CHEM,2420,200,Lecture,3,Alicia Frantz,MoWeFr 12:00pm - 12:50pm,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chemistry II,,Wait List,105,85,2
@@ -1658,7 +1658,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 12859,CHEM,4440,101,Discussion,0,Jelena Samonina,Mo 4:00pm - 6:00pm,Physics Bldg 238,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Biochemistry for Pre-Health,,Open,47,130,0
 10619,CHEM,4951,001,IND,3,Kateri DuBay,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Undergraduate Research III,,Open,22,30,0
 10620,CHEM,4961,001,IND,3,Kateri DuBay,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Undergraduate Research IV,,Open,30,40,0
-18920,CHEM,5120,001,Lecture,3,Michael Hilinski,TuTh 11:00am - 12:15pm,Shannon House 119,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chemistry IV: Synthesis,,Open,14,20,0
+18920,CHEM,5120,001,Lecture,3,Michael Hilinski,TuTh 11:00am - 12:15pm,Shannon House 119,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Organic Chemistry IV: Synthesis,,Open,13,20,0
 18921,CHEM,5180,001,Lecture,3,Lin Pu,TuTh 2:00pm - 3:15pm,Shannon House 109,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Instrumental Theory and Techniques in Organic Chemistry,,Open,18,20,0
 18922,CHEM,5220,001,Lecture,3,Sergei Egorov,MoWeFr 9:00am - 9:50am,Shannon House 119,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Advanced Physical Chemistry II: Statistical Mechanics,,Open,4,20,0
 21024,CHEM,5240,001,Lecture,3,Amrit Venkatesh,MoWeFr 10:00am - 10:50am,Shannon House 119,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Principles of Magnetic Resonance,,Open,9,20,0
@@ -2388,7 +2388,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 21694,CS,9999,048,IND,1 - 12,Hadi Daneshmand,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Dissertation,,Open,0,30,0
 21702,CS,9999,049,IND,1 - 12,Matheus Xavier Ferreira,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Dissertation,,Open,0,30,0
 21710,CS,9999,050,IND,1 - 12,Jing Yang,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Dissertation,,Open,1,30,0
-21673,DANC,1200,001,STO,1,Kim Mata,TuTh 3:30pm - 4:45pm,O'Hill Forum,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Movement Practices,,Open,8,12,0
+21673,DANC,1200,001,STO,1,Kim Mata,TuTh 3:30pm - 4:45pm,O'Hill Forum,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Movement Practices,,Open,7,12,0
 11694,DANC,2210,001,STO,1,Kathryn Schetlick,TuTh 11:00am - 12:15pm,O'Hill Forum,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Ballet I,,Open,8,12,0
 19668,DANC,2230,001,STO,1,Demetia Hopkins,MoWe 2:00pm - 3:15pm,O'Hill Forum,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Jazz Dance I,,Open,10,12,0
 11948,DANC,2430,001,Laboratory,1 - 3,Kim Mata,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Production Laboratory: Dance,,Open,7,18,0
@@ -2467,8 +2467,8 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 20530,DS,1002,003,Lecture,3,Mai Dahshan,TuTh 8:00am - 9:15am,Data Science Building Room 305,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Programming for Data Science,,Open,19,75,0
 14880,DS,2002,001,Lecture,3,Jon Tupitza,TuTh 12:30pm - 1:45pm,Data Science Building Room 205,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Science Systems,,Wait List,65,65,3
 14885,DS,2002,002,Lecture,3,Jason Williamson,MoWe 3:30pm - 4:45pm,Data Science Building Room 305,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Science Systems,,Wait List,71,65,6
-20222,DS,2002,003,Lecture,3,Neal Magee,MoWe 3:30pm - 4:45pm,Data Science Building Room 205,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Science Systems,,Open,64,65,5
-21262,DS,2002,004,Lecture,3,Austin Rivera,MoWe 6:30pm - 7:45pm,Data Science Building Room 306,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Science Systems,,Wait List,45,45,3
+20222,DS,2002,003,Lecture,3,Neal Magee,MoWe 3:30pm - 4:45pm,Data Science Building Room 205,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Science Systems,,Wait List,65,65,5
+21262,DS,2002,004,Lecture,3,Austin Rivera,MoWe 6:30pm - 7:45pm,Data Science Building Room 306,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Science Systems,,Wait List,44,45,3
 14881,DS,2003,001,Lecture,3,Farhana Faruqe,MoWe 2:00pm - 3:15pm,Data Science Building Room 205,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Communicating with Data,,Open,63,65,0
 14895,DS,2003,002,Lecture,3,Nur Yildirim,TuTh 3:30pm - 4:45pm,Data Science Building Room 305,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Communicating with Data,,Open,64,65,3
 14899,DS,2004,001,Lecture,3,Jess Reia,TuTh 2:00pm - 3:15pm,Data Science Building Room 205,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Ethics,,Open,63,65,0
@@ -3122,14 +3122,14 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 21148,EDIS,3020,504,Lecture,3,Sarah Wilson,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,The Exceptional Learner,,Wait List,30,30,3
 21640,EDIS,3020,505,Lecture,3,Lauren Collins,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,The Exceptional Learner,,Wait List,24,24,2
 17302,EDIS,3040,500,Lecture,3,Kathy Neesen,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Foundations of Early Childhood Development and Education,,Wait List,24,24,3
-17443,EDIS,3040,501,Lecture,3,Elisa Larson,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Foundations of Early Childhood Development and Education,,Open,23,24,4
+17443,EDIS,3040,501,Lecture,3,Elisa Larson,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Foundations of Early Childhood Development and Education,,Wait List,24,24,4
 17267,EDIS,3045,500,Lecture,3,Traci Kutaka,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Mathematics in Early Childhood: Understand, Assess, and Support Development",,Open,17,24,0
 17029,EDIS,3050,001,PRA,3,Glen Bull,TuTh 12:30pm - 1:45pm,Contact Department,01/13/2025 - 04/29/2025,,,,,,,,,,,,,An Introduction to Design Through Making,,Open,9,10,0
 17224,EDIS,3060,500,Lecture,3,Jaime-Duke Hawkins,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Poverty and the Young Child: Understanding Impacts in the US,,Wait List,24,24,2
 17297,EDIS,3060,501,Lecture,3,Khara Turnbull,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Poverty and the Young Child: Understanding Impacts in the US,,Wait List,24,24,1
 17392,EDIS,3060,502,Lecture,3,Khara Turnbull,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Poverty and the Young Child: Understanding Impacts in the US,,Open,22,24,1
 17444,EDIS,3060,503,Lecture,3,Ginny Vitiello,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Poverty and the Young Child: Understanding Impacts in the US,,Wait List,24,24,2
-17496,EDIS,3060,504,Lecture,3,Ginny Vitiello,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Poverty and the Young Child: Understanding Impacts in the US,,Wait List,24,24,0
+17496,EDIS,3060,504,Lecture,3,Ginny Vitiello,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Poverty and the Young Child: Understanding Impacts in the US,,Open,23,24,0
 17225,EDIS,3460,500,Lecture,1,Suzanne Landon,TBA,TBA,01/13/2025 - 03/07/2025,,,,,,,,,,,,,Introduction to English Learners,,Closed,24,24,0
 16803,EDIS,3881,001,PRA,1 - 6,Stephanie Tatel,MoWe 8:00am - 10:00am,Contact Department,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Field Experience: Elementary Education,,Open,26,32,0
 17143,EDIS,4060,001,Lecture,3,Nate Welker,TuTh 9:30am - 10:45am,Pavilion VIII 108,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Mathematics Instruction for Special Education,,Open,4,12,0
@@ -3194,7 +3194,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 17239,EDIS,5409,500,Lecture,3,Diane Schnoor,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Children's Literature,,Open,9,24,0
 17240,EDIS,5410,500,Lecture,3,"Wintre Johnson, Tiffany Meadows",TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Young Adult Literature,,Open,9,24,0
 17241,EDIS,5422,500,Lecture,3,Karen Ford,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Cross-Cultural Education for Diverse Learners,,Open,18,24,0
-17300,EDIS,5422,501,Lecture,3,Wendy Amato,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Cross-Cultural Education for Diverse Learners,,Open,21,24,0
+17300,EDIS,5422,501,Lecture,3,Wendy Amato,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Cross-Cultural Education for Diverse Learners,,Open,20,24,0
 17242,EDIS,5423,500,Lecture,3,William Fox,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,English Linguistics,,Open,6,24,0
 17306,EDIS,5425,500,Lecture,3,"Ottilie Austin, Italia Talley",TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Teaching Writing,,Wait List,24,24,0
 17243,EDIS,5428,500,Lecture,3,"Mandy Flores-Curley, April Salerno",TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,ESL Methods PreK-12,,Open,11,24,0
@@ -3810,7 +3810,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 13659,ENCW,8999,008,IND,1 - 12,Lisa Spaar,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,MFA Non-Topical Research,,Open,1,30,0
 14510,ENCW,8999,009,IND,1 - 12,Kevin Moffett,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,MFA Non-Topical Research,,Open,5,30,0
 19922,ENGL,1500,001,Lecture,3,Stephen Hopkins,TuTh 3:30pm - 4:45pm,Gibson Hall 211,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Masterworks of Literature,Vikings: Myths and Sagas,Open,46,60,0
-19940,ENGL,2500,001,SEM,3,Victor Luftig,TuTh 3:30pm - 4:45pm,New Cabell Hall 291,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Literary Studies,Introduction to Literary Studies,Open,18,20,7
+19940,ENGL,2500,001,SEM,3,Victor Luftig,TuTh 3:30pm - 4:45pm,New Cabell Hall 291,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Literary Studies,Introduction to Literary Studies,Open,17,20,7
 19915,ENGL,2502,001,SEM,3,John O'Brien,MoWe 2:00pm - 3:15pm,The Rotunda Room 150,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Masterpieces of English Literature,"Four Books, Four Centuries, Four Forms",Wait List,20,20,6
 19929,ENGL,2502,002,SEM,3,Alison Hurley,TuTh 9:30am - 10:45am,Shannon House 119,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Masterpieces of English Literature,"Locating Jane. Or, Putting Austen in her Place",Open,19,20,3
 20886,ENGL,2502,003,SEM,3,Viola Cozzio,TuTh 12:30pm - 1:45pm,Shannon House 119,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Masterpieces of English Literature,Monsters and Marvels in Medieval Literature,Wait List,20,20,2
@@ -3895,7 +3895,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 19926,ENGL,4500,002,SEM,3,Cynthia Wall,MoWe 3:30pm - 4:45pm,Brooks Hall 103,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in English Literature,The Frankenstein Circle,Open,12,18,0
 19905,ENGL,4520,001,SEM,3,Rebecca Rush,TuTh 11:00am - 12:15pm,New Cabell Hall 383,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in Renaissance Literature,Renaissance and Reformation,Wait List,20,18,0
 19928,ENGL,4560,001,SEM,3,Susan Fraiman,TuTh 12:30pm - 1:45pm,Dawson's Row 1,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in Modern and Contemporary Literature,Contemporary Women's Texts,Wait List,14,0,2
-19998,ENGL,4560,002,SEM,3,Victoria Olwell,TuTh 9:30am - 10:45am,Brooks Hall 103,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in Modern and Contemporary Literature,"American Novels, American Controversies",Wait List,18,18,0
+19998,ENGL,4560,002,SEM,3,Victoria Olwell,TuTh 9:30am - 10:45am,Brooks Hall 103,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in Modern and Contemporary Literature,"American Novels, American Controversies",Open,17,18,0
 19949,ENGL,4561,001,SEM,3,Jahan Ramazani,MoWe 2:00pm - 3:15pm,Bryan Hall 328,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in Modern Literature and Culture,Poetry in a Global Age,Open,14,18,0
 19992,ENGL,4561,002,SEM,3,Mrinalini Chakravorty,TuTh 3:30pm - 4:45pm,New Cabell Hall 036,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in Modern Literature and Culture,The Queer Novel,Open,10,18,0
 19978,ENGL,4570,001,SEM,3,Marlon Ross,TuTh 11:00am - 12:15pm,New Cabell Hall 594,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Seminar in American Literature since 1900,James Baldwin,Open,8,18,0
@@ -3985,8 +3985,8 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 17685,ENTP,1501,006,Lecture,0.5,Adam Koch,Mo 3:00am - 3:20am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Business Essentials - Accounting,Open,48,100,0
 17686,ENTP,1501,007,Lecture,0.5,Jeremy Marcel,Mo 3:30am - 3:50am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Business Essentials - Strategic Management,Open,48,100,0
 17687,ENTP,1501,008,Lecture,0.5,Mark White,Mo 4:30am - 4:50am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Business Essentials - Finance,Open,56,120,0
-20928,ENTP,1501,009,Lecture,0.5,Peter Kaye,Mo 6:30am - 6:50am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Business Essentials-Marketing,Open,42,100,0
-20929,ENTP,1501,010,Lecture,0.5,Kiera Allison,Mo 5:00am - 5:20am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,"Communicating with Gen AI: Tools, Techniques",Open,29,100,0
+20928,ENTP,1501,009,Lecture,0.5,Peter Kaye,Mo 6:30am - 6:50am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Business Essentials-Marketing,Open,43,100,0
+20929,ENTP,1501,010,Lecture,0.5,Kiera Allison,Mo 5:00am - 5:20am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,"Communicating with Gen AI: Tools, Techniques",Open,28,100,0
 20930,ENTP,1501,011,Lecture,0.5,George Geis,Mo 5:30am - 5:50am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Growing an Entrepreneurial Business,Open,27,100,0
 20931,ENTP,1501,012,Lecture,0.5,"Saras Sarasvathy, Jim Zuffoletti",Mo 5:55am - 6:25am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Intro to Entrepreneurship Essentials,Open,10,100,0
 21723,ENTP,1501,013,Lecture,0.5,Jingjing Li,Mo 6:30am - 7:00am,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Entrepreneurship Management,Unlocking Predictive AI,Open,3,100,0
@@ -4172,7 +4172,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 11525,EVSC,3601,004,Laboratory,1,Todd Scanlon,Th 2:00pm - 6:00pm,Kerchof Hall 115A,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Physical Hydrology Laboratory,,Open,9,14,0
 10965,EVSC,4002,001,SEM,1,Stephen Macko,Tu 4:00pm - 4:50pm,Clark Hall 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Undergraduate Seminar,,Open,25,120,0
 12515,EVSC,4015,001,Lecture,3,Xi Yang,TuTh 2:00pm - 3:15pm,Ridley Hall 123,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Advanced Remote Sensing,,Open,3,10,0
-10680,EVSC,4050,001,Lecture,3,Stephen Macko,TuTh 12:30pm - 1:45pm,Clark Hall 108,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Topics in Oceanography,,Open,33,50,0
+10680,EVSC,4050,001,Lecture,3,Stephen Macko,TuTh 12:30pm - 1:45pm,Clark Hall 108,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Topics in Oceanography,,Open,32,50,0
 18972,EVSC,4140,001,Lecture,3,Karen Mcglathery,TuTh 11:00am - 12:15pm,Thornton Hall E304,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Global Coastal Change,,Closed,26,25,0
 13597,EVSC,4290,001,Lecture,3,Michael Pace,MoWeFr 10:00am - 10:50am,New Cabell Hall 485,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Limnology: Inland Water Ecosystems,,Open,29,30,0
 18974,EVSC,4390,001,Lecture,3,"Kevin Grise, Kathleen Schiro",TuTh 2:00pm - 3:15pm,Ridley Hall 125,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Climate Modeling and Analysis,,Open,9,15,0
@@ -4341,7 +4341,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 10696,FREN,2020,006,Lecture,3,Christopher Ice,MoWeFr 11:00am - 11:50am,New Cabell Hall 303,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Intermediate French II,,Open,13,15,1
 11416,FREN,2020,007,Lecture,3,"Lila Belahlou, -",TuTh 12:30pm - 1:45pm,New Cabell Hall 209,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Intermediate French II,,Open,14,16,0
 13710,FREN,2020,008,Lecture,3,Christopher Ice,MoWeFr 1:00pm - 1:50pm,Wilson Hall 244,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Intermediate French II,,Open,13,15,0
-12777,FREN,3029,001,Discussion,1,"Guillaume Bisson, -",TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Language House Conversation,,Open,3,10,0
+12777,FREN,3029,001,Discussion,1,"Guillaume Bisson, -",TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Language House Conversation,,Open,4,10,0
 19770,FREN,3030,001,Lecture,3,Cecile Rey,TuTh 9:30am - 10:45am,New Cabell Hall 187,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Phonetics,,Wait List,18,18,0
 11864,FREN,3031,001,SEM,3,Karen James,MoWeFr 12:00pm - 12:50pm,New Cabell Hall 407,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Finding Your Voice in French,,Open,10,15,0
 11865,FREN,3031,002,SEM,3,Rachel Geer,MoWeFr 1:00pm - 1:50pm,New Cabell Hall 211,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Finding Your Voice in French,,Open,14,15,0
@@ -4924,7 +4924,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 14314,GSGS,3330,001,Lecture,3,Spencer Phillips,TuTh 3:30pm - 4:45pm,New Cabell Hall 232,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Ecological Economics: Economics as if People and Thermodynamics Mattered,,Open,38,40,0
 19900,GSGS,3559,001,Lecture,1,Scott Heysell,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,New Course in Global Studies,eGlobal: Sustainable Engagement in Rwanda- Part II,Open,17,100,0
 19902,GSGS,3559,002,Lecture,1,Scott Heysell,We 5:00pm - 6:00pm,New Cabell Hall 338,01/13/2025 - 04/29/2025,,,,,,,,,,,,,New Course in Global Studies,Global Partnership Essentials: Hlth Engagement II,Wait List,30,30,6
-19903,GSGS,3559,003,Lecture,3,Andreja Siliunas,TuTh 12:30pm - 1:45pm,New Cabell Hall 058,01/13/2025 - 04/29/2025,,,,,,,,,,,,,New Course in Global Studies,Art and Politics in Global Perspective,Open,29,30,2
+19903,GSGS,3559,003,Lecture,3,Andreja Siliunas,TuTh 12:30pm - 1:45pm,New Cabell Hall 058,01/13/2025 - 04/29/2025,,,,,,,,,,,,,New Course in Global Studies,Art and Politics in Global Perspective,Wait List,30,30,2
 20511,GSGS,3559,004,Lecture,3,Muhammad Tayyab Safdar,MoWe 2:00pm - 3:15pm,John W. Warner Hall 113,01/13/2025 - 04/29/2025,,,,,,,,,,,,,New Course in Global Studies,Development & Security: A Critical Analysis,Open,16,30,0
 20051,GSGS,4200,001,SEM,3,"David Edmunds, Andreja Siliunas, Levi Vonk",TuTh 2:00pm - 3:15pm,Wilson Hall 325,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Applied Research in Global Studies,,Wait List,25,25,0
 20684,GSGS,4200,002,SEM,3,"David Edmunds, Andreja Siliunas, Levi Vonk",TuTh 2:00pm - 3:15pm,Monroe Hall 134,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Applied Research in Global Studies,,Open,20,30,0
@@ -5198,7 +5198,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 12268,JPTR,4991,001,SEM,1,Gustav Heldt,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Japanese Capstone,,Open,0,12,0
 11946,KICH,1020,001,Lecture,3,Allison Bigelow,TuTh 4:00pm - 5:15pm,Clark G043,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Maya K'iche' II,,Open,4,5,0
 12331,KICH,2020,001,Lecture,3,Allison Bigelow,TuTh 2:00pm - 3:15pm,Clark G043,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Intermediate Maya K'iche' II,,Open,0,5,0
-16874,KINE,2200,001,Lecture,3,Martin Block,TuTh 11:00am - 12:15pm,Minor Hall 125,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Motor Development,,Wait List,200,200,8
+16874,KINE,2200,001,Lecture,3,Martin Block,TuTh 11:00am - 12:15pm,Minor Hall 125,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Motor Development,,Wait List,200,200,9
 16927,KINE,2420,001,Lecture,3,"Jason Davis, Jackie Lebeau",TuTh 9:30am - 10:45am,Gibson Hall 141,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Personal Training,,Closed,22,22,0
 16948,KINE,2850,500,Lecture,1,George Sikoryak,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Medical Terminology,,Wait List,100,100,33
 16949,KINE,2850,501,Lecture,1,George Sikoryak,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Medical Terminology,,Wait List,50,50,34
@@ -5325,13 +5325,13 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 17353,KLPA,1400,003,Lecture,1,"Jillian Allen, Abby Fines",TuTh 9:30am - 10:45am,Slaughter Rec 117-Main Gym,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Weight Training,,Open,23,24,0
 17354,KLPA,1410,001,Lecture,1,"Jessie Carpenter, Abby Fines",MoWeFr 8:00am - 8:50am,Aquatic & Fitness Ctr MP1,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Yoga,,Open,22,24,2
 17355,KLPA,1410,002,Lecture,1,"Abby Fines, Ann Mazur",MoWeFr 9:00am - 9:50am,Aquatic & Fitness Ctr MP1,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Yoga,,Open,21,24,0
-17356,KLPA,1410,003,Lecture,1,"John Bultman, Abby Fines",MoWeFr 10:00am - 10:50am,Contemplative Commons Room 304,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Yoga,,Open,19,24,4
+17356,KLPA,1410,003,Lecture,1,"John Bultman, Abby Fines",MoWeFr 10:00am - 10:50am,Contemplative Commons Room 304,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Yoga,,Open,20,24,4
 17357,KLPA,1410,004,Lecture,1,"Abby Fines, Michael Okusa",TuTh 8:00am - 9:15am,Aquatic & Fitness Ctr MP1,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Yoga,,Wait List,24,24,1
 17358,KLPA,1410,005,Lecture,1,"John Bultman, Abby Fines",TuTh 12:30pm - 1:45pm,Contemplative Commons Room 304,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Yoga,,Wait List,24,24,12
 17359,KLPA,1410,500,Lecture,1,"Abby Fines, Robin Lilly",TuTh 3:30pm - 4:45pm,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Yoga,,Open,19,24,2
 17360,KLPA,1425,001,Lecture,1,"Abby Fines, Craig Jennings",TuTh 9:30am - 10:45am,Slaughter Rec Climbing Wall,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Climbing,,Open,23,24,3
 17361,KLPA,1425,002,Lecture,1,"Matthew Busch, Abby Fines",TuTh 12:30pm - 1:45pm,Slaughter Rec Climbing Wall,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Climbing,,Wait List,24,24,13
-17362,KLPA,1430,001,Lecture,1,"Abby Fines, Hamid Jim Karimi",TuTh 8:00am - 9:15am,Aquatic & Fitness Ctr MP2,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Cross Training and Conditioning,,Open,14,24,0
+17362,KLPA,1430,001,Lecture,1,"Abby Fines, Hamid Jim Karimi",TuTh 8:00am - 9:15am,Aquatic & Fitness Ctr MP2,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Cross Training and Conditioning,,Open,15,24,0
 17364,KLPA,1440,001,Lecture,1,"Abby Fines, Ann Mazur",MoWeFr 8:00am - 8:50am,Slaughter Rec Gymnasium CT 1,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Running for Fitness,,Open,23,24,0
 17365,KLPA,1440,002,Lecture,1,"Abby Fines, Craig Jennings",TuTh 8:00am - 9:15am,Slaughter Rec Gymnasium CT 1,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Running for Fitness,,Open,13,24,0
 17366,KLPA,1445,001,Lecture,1,"Abby Fines, Katie Impastato",MoWeFr 8:00am - 8:50am,Slaughter Rec 117-Main Gym,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Women's Fitness,,Open,23,24,0
@@ -6082,7 +6082,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 15101,MAE,9999,002,IND,1 - 12,Hilary Bart-Smith,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,0,30,0
 15280,MAE,9999,003,IND,1 - 12,Patrick Hopkins,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,10,30,0
 15102,MAE,9999,004,IND,1 - 12,Harsha Chelliah,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,2,30,0
-15103,MAE,9999,005,IND,1 - 12,Qing Chang,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,4,30,0
+15103,MAE,9999,005,IND,1 - 12,Qing Chang,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,5,30,0
 15104,MAE,9999,006,IND,1 - 12,Chris Goyne,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,5,30,0
 15589,MAE,9999,007,IND,1 - 12,Lin Ma,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,0,10,0
 15343,MAE,9999,008,IND,1 - 12,Gregory Gerling,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Dissertation Research, Mechanical and Aerospace Engineering",,Open,1,10,0
@@ -7389,10 +7389,10 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 19483,PHIL,1330,105,Discussion,0,Dakota Jones,Fr 12:00pm - 12:50pm,Pavilion VIII 102,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Virtual Worlds and Philosophy,,Wait List,20,20,1
 19484,PHIL,1330,106,Discussion,0,Dakota Jones,Fr 2:00pm - 2:50pm,New Cabell Hall 111,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Virtual Worlds and Philosophy,,Wait List,20,20,1
 11992,PHIL,1410,001,Lecture,3,Trey Boone,TuTh 2:00pm - 3:15pm,Physics Bldg 338,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Forms of Reasoning,,Wait List,120,120,17
-14147,PHIL,1730,100,Lecture,3,Nate Adams,TuTh 8:30am - 9:20am,Nau Hall 211,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Moral and Political Philosophy,,Open,54,60,1
+14147,PHIL,1730,100,Lecture,3,Nate Adams,TuTh 8:30am - 9:20am,Nau Hall 211,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Moral and Political Philosophy,,Open,55,60,1
 14149,PHIL,1730,102,Discussion,0,Anna Morse,Fr 9:00am - 9:50am,New Cabell Hall 332,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Moral and Political Philosophy,,Open,19,20,0
 14150,PHIL,1730,103,Discussion,0,Anna Morse,Fr 10:00am - 10:50am,New Cabell Hall 209,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Moral and Political Philosophy,,Open,18,20,0
-14152,PHIL,1730,105,Discussion,0,Anna Morse,Fr 12:00pm - 12:50pm,Cocke Hall 115,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Moral and Political Philosophy,,Open,16,20,1
+14152,PHIL,1730,105,Discussion,0,Anna Morse,Fr 12:00pm - 12:50pm,Cocke Hall 115,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Moral and Political Philosophy,,Open,17,20,1
 19507,PHIL,2060,100,Lecture,3,Alexander Motchoulski,MoWe 12:00pm - 12:50pm,Wilson Hall 301,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Philosophical Problems in Law,,Open,117,120,7
 19508,PHIL,2060,101,Discussion,0,Blake Harris,Th 6:00pm - 6:50pm,Cocke Hall 115,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Philosophical Problems in Law,,Wait List,20,20,4
 19509,PHIL,2060,102,Discussion,0,Blake Harris,Th 7:00pm - 7:50pm,New Cabell Hall 411,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Philosophical Problems in Law,,Wait List,20,20,0
@@ -7981,8 +7981,8 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 12942,PSYC,1020,002,SEM,1,Alison Nagel,Mo 5:30pm - 6:45pm,Minor Hall 125,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Hoos Connected: Leadership and Communication,,Open,37,50,0
 13622,PSYC,1020,003,SEM,1,Alison Nagel,Tu 5:00pm - 6:15pm,Minor Hall 125,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Hoos Connected: Leadership and Communication,,Open,116,170,0
 10878,PSYC,2005,001,Lecture,3,Elise Clerkin,TuTh 9:30am - 10:45am,Minor Hall 125,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Research Methods and Data Analysis I,,Wait List,181,180,59
-12320,PSYC,2150,100,Lecture,3,Mariana Golino,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Cognition,,Wait List,198,198,38
-13551,PSYC,2150,101,Laboratory,0,Mariana Golino,Fr 2:00pm - 3:50pm,Chemistry Bldg 217,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Cognition,,Wait List,99,99,35
+12320,PSYC,2150,100,Lecture,3,Mariana Golino,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Cognition,,Wait List,198,198,37
+13551,PSYC,2150,101,Laboratory,0,Mariana Golino,Fr 2:00pm - 3:50pm,Chemistry Bldg 217,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Cognition,,Wait List,99,99,34
 13552,PSYC,2150,102,Laboratory,0,Mariana Golino,Fr 4:00pm - 5:50pm,Chemistry Bldg 217,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Cognition,,Wait List,99,99,3
 20365,PSYC,2410,001,Lecture,3,Elise Clerkin,TuTh 2:00pm - 3:15pm,Chemistry Bldg 402,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Abnormal Psychology,,Wait List,350,350,101
 10877,PSYC,2600,001,Lecture,3,Christopher Mazurek,TuTh 9:30am - 10:45am,Wilson Hall 402,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Social Psychology,,Open,323,325,19
@@ -7995,7 +7995,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 12943,PSYC,3200,001,Lecture,3,Jianhua Cang,TuTh 9:30am - 10:45am,Gilmer Hall 390,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Fundamentals of Neuroscience,,Wait List,150,150,52
 12336,PSYC,3310,001,Lecture,3,M. Joseph Meyer,We 2:00pm - 3:15pm,Web-Based Course,01/13/2025 - 04/29/2025,,,,,,,,,,,,,RM: R Applications in Psychology,,Wait List,95,70,59
 20372,PSYC,3415,001,Lecture,3,Zoe Robertson,TuTh 11:00am - 12:15pm,Shannon House 107,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Research Methods in Developmental Psychology,,Wait List,35,35,5
-20373,PSYC,3420,001,Lecture,3,Eric Turkheimer,TuTh 3:30pm - 4:45pm,Physics Bldg 338,01/13/2025 - 04/29/2025,,,,,,,,,,,,,The Nature Nurture Debate,,Open,99,100,16
+20373,PSYC,3420,001,Lecture,3,Eric Turkheimer,TuTh 3:30pm - 4:45pm,Physics Bldg 338,01/13/2025 - 04/29/2025,,,,,,,,,,,,,The Nature Nurture Debate,,Wait List,99,100,16
 20552,PSYC,3445,001,SEM,3,Aaron Reuben,TuTh 2:00pm - 3:15pm,Gilmer Hall 390,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Introduction to Clinical Psychology,,Wait List,150,150,27
 14321,PSYC,3490,001,Lecture,3,Tobias Grossmann,TuTh 11:00am - 12:15pm,Gilmer Hall 390,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Infant Development,,Wait List,150,150,65
 13511,PSYC,3560,002,SEM,1,Mariana Golino,Th 9:30am - 10:45am,Contact Department,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Undergraduate Teaching Experience,Cognitive Undergraduate Teaching Experience,Open,2,5,0
@@ -8550,7 +8550,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 20149,SOC,1220,102,Discussion,0,Piper Thomson,Fr 10:00am - 10:50am,Wilson Hall 244,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Social Problems,,Open,19,20,2
 20150,SOC,1220,103,Discussion,0,Piper Thomson,Fr 12:00pm - 12:50pm,New Cabell Hall 287,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Social Problems,,Open,19,20,3
 21241,SOC,2010,001,Lecture,3,Baris Unlu,TuTh 3:30pm - 4:45pm,New Cabell Hall 389,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Principles of Sociology,,Open,28,35,1
-20151,SOC,2052,100,Lecture,3,William Wilcox,MoWe 9:00am - 9:50am,John W. Warner Hall 209,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Open,257,260,7
+20151,SOC,2052,100,Lecture,3,William Wilcox,MoWe 9:00am - 9:50am,John W. Warner Hall 209,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Open,256,260,7
 20152,SOC,2052,101,Discussion,0,Lana Park,Fr 9:00am - 9:50am,New Cabell Hall 115,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,19,19,0
 20153,SOC,2052,102,Discussion,0,Lana Park,Fr 10:00am - 10:50am,New Cabell Hall 332,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,1
 20154,SOC,2052,103,Discussion,0,Lana Park,Fr 11:00am - 11:50am,New Cabell Hall 283,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,0
@@ -8559,7 +8559,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 20157,SOC,2052,106,Discussion,0,Michael Krieger,Fr 2:00pm - 2:50pm,New Cabell Hall 291,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,0
 20158,SOC,2052,107,Discussion,0,Wenhao Song,Fr 9:00am - 9:50am,New Cabell Hall 187,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,0
 20159,SOC,2052,108,Discussion,0,Wenhao Song,Fr 10:00am - 10:50am,New Cabell Hall 287,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Open,19,20,0
-20160,SOC,2052,109,Discussion,0,Wenhao Song,Fr 12:00pm - 12:50pm,New Cabell Hall 415,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,2
+20160,SOC,2052,109,Discussion,0,Wenhao Song,Fr 12:00pm - 12:50pm,New Cabell Hall 415,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,19,20,2
 21492,SOC,2052,110,Discussion,0,Jasmine Piescik,We 2:00pm - 2:50pm,Shannon House 111,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,1
 21493,SOC,2052,111,Discussion,0,Wenhao Song,We 12:00pm - 12:50pm,New Cabell Hall 209,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,1
 21494,SOC,2052,112,Discussion,0,Wenhao Song,We 1:00pm - 1:50pm,New Cabell Hall 209,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Sociology of the Family,,Wait List,20,20,2
@@ -8589,7 +8589,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 20171,SOC,3595,001,Lecture,3,Pierre-Christian Fink,Tu 6:00pm - 8:30pm,New Cabell Hall 489,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Sociology,Sociology of Globalization and Finance,Open,23,35,0
 21162,SOC,3595,002,Lecture,3,Johanna O'Loughlin,TuTh 12:30pm - 1:45pm,New Cabell Hall 032,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Special Topics in Sociology,Sociology of Aging,Open,26,35,0
 20172,SOC,3640,001,Lecture,3,Krishan Kumar,TuTh 11:00am - 12:15pm,John W. Warner Hall 110,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Human Society in History,,Wait List,35,35,0
-12877,SOC,3700,001,Lecture,3,David Skubby,TuTh 9:30am - 10:45am,New Cabell Hall 032,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Health and Society,,Open,34,35,5
+12877,SOC,3700,001,Lecture,3,David Skubby,TuTh 9:30am - 10:45am,New Cabell Hall 032,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Health and Society,,Wait List,35,35,5
 14001,SOC,4100,001,Lecture,3,B. Foster,MoWe 3:30pm - 4:45pm,New Cabell Hall 291,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Black Community Life,,Wait List,20,20,2
 20176,SOC,4180,001,SEM,3,Milton Vickerman,MoWe 4:00pm - 5:15pm,New Cabell Hall 411,01/13/2025 - 04/29/2025,,,,,,,,,,,,,The American Dream and Its Limits,,Wait List,20,20,8
 20177,SOC,4260,001,SEM,3,Rose Buckelew,TuTh 11:00am - 12:15pm,Cocke Hall 101,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Race, Crime and Punishment",,Wait List,20,15,9
@@ -8787,7 +8787,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 12937,STAT,3280,001,Lecture,3,Richard Ross,MoWeFr 11:00am - 11:50am,Gilmer Hall 257,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Visualization and Management,,Wait List,62,60,12
 13676,STAT,3280,002,Lecture,3,Richard Ross,MoWeFr 12:00pm - 12:50pm,Gilmer Hall 257,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Data Visualization and Management,,Wait List,60,60,16
 14712,STAT,3480,001,Lecture,3,Justin Weinstock,TuTh 11:00am - 12:15pm,Nau Hall 211,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Nonparametric and Rank-Based Statistics,,Wait List,60,60,28
-13549,STAT,4120,001,Lecture,3,Jeffrey Woo,MoWe 2:00pm - 3:15pm,Physics Bldg 220,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Applied Linear Models,,Wait List,60,60,8
+13549,STAT,4120,001,Lecture,3,Jeffrey Woo,MoWe 2:00pm - 3:15pm,Physics Bldg 220,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Applied Linear Models,,Wait List,59,60,8
 19741,STAT,4160,001,Lecture,3,Maria Ferrara,MoWe 2:00pm - 3:15pm,Monroe Hall 110,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Experimental Design,,Wait List,60,60,18
 12894,STAT,4220,001,Lecture,3,Gretchen Martinet,TuTh 9:30am - 10:45am,Monroe Hall 110,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Applied Analytics for Business,,Closed,47,40,0
 12895,STAT,4220,002,Lecture,3,Gretchen Martinet,TuTh 11:00am - 12:15pm,Monroe Hall 110,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Applied Analytics for Business,,Closed,54,40,0
@@ -9080,7 +9080,7 @@ ClassNumber,Mnemonic,Number,Section,Type,Units,Instructor1,Days1,Room1,MeetingDa
 11879,WGS,4500,001,SEM,3,Aaron Stone,Tu 2:00pm - 4:30pm,The Rotunda Room 150,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Topics in Women, Gender & Sexuality",How To Do Drag,Wait List,15,15,0
 13581,WGS,4500,002,SEM,3,Daisy Guzman Nunez,We 2:00pm - 4:30pm,Pavilion VIII 108,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Topics in Women, Gender & Sexuality",Voices from the Global South,Open,12,15,0
 19842,WGS,4500,003,SEM,3,Isabel Gonzales,Mo 2:00pm - 4:30pm,Bryan Hall 334,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Topics in Women, Gender & Sexuality",Gender and its Discontents:Trans/Nonbinary Studies,Wait List,15,15,1
-19843,WGS,4559,001,SEM,3,Bonnie Hagerman,TuTh 11:00am - 12:15pm,The Rotunda Room 152,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"New Course in Women, Gender & Sexuality",Gender and Golden Age of Sport,Open,14,15,0
+19843,WGS,4559,001,SEM,3,Bonnie Hagerman,TuTh 11:00am - 12:15pm,The Rotunda Room 152,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"New Course in Women, Gender & Sexuality",Gender and Golden Age of Sport,Wait List,15,15,0
 19844,WGS,4820,001,SEM,3,Lanice Avery,We 3:30pm - 6:00pm,The Rotunda Room 152,01/13/2025 - 04/29/2025,,,,,,,,,,,,,Black Feminist Theory,,Open,8,15,0
 14817,WGS,4999,001,IND,3,Lisa Speidel,TBA,TBA,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Women, Gender & Sexuality Senior Thesis II",,Closed,1,1,0
 19845,WGS,5559,001,SEM,3,Andre Cavalcante,Mo 3:30pm - 6:00pm,New Cabell Hall 111,01/13/2025 - 04/29/2025,,,,,,,,,,,,,"Topics in Women, Gender & Sexuality",LGBTQ Issues in the Media,Open,8,20,0
