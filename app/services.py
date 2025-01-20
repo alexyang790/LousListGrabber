@@ -113,3 +113,47 @@ def search_data_service(query, return_format=None):
         return jsonify({"error": "Data not found. Please fetch it first."}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+def advanced_search_service(query, columns, return_format=None):
+    try:
+        file_name = os.path.join(os.getcwd(), 'data.csv')
+        data = pd.read_csv(file_name)
+
+        # Perform a case-insensitive search across all columns
+        results = data.apply(
+            lambda row: row.astype(str).str.contains(query, case=False).any(), axis=1
+        )
+        matching_data = data[results]
+
+        if matching_data.empty:
+            return jsonify({"results": []}), 200
+
+        # Filter the DataFrame to include only the specified columns
+        filtered_data = matching_data[columns]
+
+        # Replace NaN values with None for JSON compatibility
+        filtered_data = filtered_data.where(pd.notnull(filtered_data), None)
+
+        if return_format == 'csv':
+            # Return CSV file for download
+            csv_io = io.StringIO()
+            filtered_data.to_csv(csv_io, index=False)
+            csv_io.seek(0)
+            return send_file(
+                io.BytesIO(csv_io.getvalue().encode('utf-8')),
+                mimetype='text/csv',
+                as_attachment=True,
+                download_name='search_results.csv'
+            )
+
+        if return_format == 'json':
+            # Convert DataFrame to JSON and return
+            return jsonify({"results": filtered_data.to_dict(orient='records')}), 200
+
+        # Default to JSON if no return_format is specified
+        return jsonify({"results": filtered_data.to_dict(orient='records')}), 200
+
+    except FileNotFoundError:
+        return jsonify({"error": "Data not found. Please fetch it first."}), 404
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
