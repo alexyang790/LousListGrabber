@@ -7,6 +7,10 @@ import io
 
 def fetch_data_service():
     try:
+        # Create data directory if it doesn't exist
+        data_dir = os.path.dirname(os.path.join(os.getcwd(), 'data.csv'))
+        os.makedirs(data_dir, exist_ok=True)
+        
         # URL to fetch data
         url = 'https://louslist.org/deliverData.php'
         form_data = {

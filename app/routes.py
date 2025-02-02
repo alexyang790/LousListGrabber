@@ -6,14 +6,14 @@ from flasgger import swag_from
 routes = Blueprint("routes", __name__)
 
 @routes.route('/')
+@swag_from({
+    'responses': {
+        200: {
+            'description': 'Returns a welcome message'
+        }
+    }
+})
 def home():
-    """
-    Welcome Route
-    ---
-    responses:
-      200:
-        description: Returns a welcome message
-    """
     return jsonify({'message': "Lou's List App is Running!"})
 
 @routes.route('/fetch')
@@ -28,15 +28,6 @@ def home():
     }
 })
 def fetch_data():
-    """
-    Fetch Data Route
-    ---
-    responses:
-      200:
-        description: Successfully fetched data.
-      500:
-        description: Failed to fetch data due to network or parsing errors.
-    """
     return fetch_data_service()
 
 @routes.route('/data')
@@ -60,15 +51,6 @@ def fetch_data():
     }
 })
 def display_data():
-    """
-    Display Data Route
-    ---
-    responses:
-      200:
-        description: Returns all CSV data in JSON format.
-      404:
-        description: Data file not found. Run /fetch first.
-    """
     return display_sample_data()
 
 @routes.route('/getcsv')
@@ -83,15 +65,6 @@ def display_data():
     }
 })
 def get_csv():
-    """
-    Get CSV Route
-    ---
-    responses:
-      200:
-        description: Returns the CSV file for download.
-      404:
-        description: Data file not found. Run /fetch first.
-    """
     return get_csv_service()
 
 @routes.route('/search/<query>/<return_format>')
@@ -122,26 +95,6 @@ def get_csv():
     }
 })
 def search_data(query, return_format):
-    """
-    Search Data Route
-    ---
-    parameters:
-      - name: query
-        in: path
-        type: string
-        required: true
-        description: Search query to filter the data.
-      - name: return_format
-        in: path
-        type: string
-        required: true
-        description: "Response format: 'json' or 'csv'."
-    responses:
-      200:
-        description: Filtered search results in the requested format.
-      404:
-        description: Data file not found. Run /fetch first.
-    """
     return search_data_service(query, return_format)
 
 @routes.route('/dashboard')
@@ -153,13 +106,6 @@ def search_data(query, return_format):
     }
 })
 def dashboard():
-    """
-    Dashboard Route
-    ---
-    responses:
-      200:
-        description: Returns the dashboard HTML page for searching and downloading data.
-    """
     return render_template('dashboard.html')
 
 @routes.route('/advanced_search/ofs/<query>/<return_format>')
@@ -190,26 +136,6 @@ def dashboard():
     }
 })
 def advanced_search_ofs(query, return_format):
-    """
-    Advanced Search for OFS Use
-    ---
-    parameters:
-      - name: query
-        in: path
-        type: string
-        required: true
-        description: Search query for OFS-specific columns.
-      - name: return_format
-        in: path
-        type: string
-        required: true
-        description: "Response format: 'json' or 'csv'."
-    responses:
-      200:
-        description: Filtered results for OFS-specific columns in the requested format.
-      404:
-        description: Data file not found or no results.
-    """
     return advanced_search_service(query, columns=['ClassNumber', 'Room1', 'Days1', 'Enrollment', 'MeetingDates1', 'Type'], return_format=return_format)
 
 @routes.route('/advanced_search/enrollment/<query>/<return_format>')
@@ -240,26 +166,6 @@ def advanced_search_ofs(query, return_format):
     }
 })
 def advanced_search_enrollment(query, return_format):
-    """
-    Advanced Search for Enrollment Check
-    ---
-    parameters:
-      - name: query
-        in: path
-        type: string
-        required: true
-        description: Search query for Enrollment-specific columns.
-      - name: return_format
-        in: path
-        type: string
-        required: true
-        description: "Response format: 'json' or 'csv'."
-    responses:
-      200:
-        description: Filtered results for Enrollment-specific columns in the requested format.
-      404:
-        description: Data file not found or no results.
-    """
     return advanced_search_service(query, columns=['ClassNumber', 'Days1', 'Enrollment', 'EnrollmentLimit', 'Status', 'Title'], return_format=return_format)
 
 # Function to initialize routes in the app
