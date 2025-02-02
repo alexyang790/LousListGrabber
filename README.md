@@ -18,7 +18,8 @@ A Flask-based web application that fetches and analyzes UVA course data from Lou
 # Clone and run
 git clone https://github.com/alexyang790/louslistgrabber.git
 cd louslistgrabber
-docker-compose up --build
+docker build -t louslistgrabber .
+docker run -p 5002:5002 louslistgrabber
 ```
 
 ### Manual Setup
@@ -55,8 +56,63 @@ python run.py
 | GET `/fetch` | Fetch latest Lou's List data |
 | GET `/data` | View all course data (JSON) |
 | GET `/getcsv` | Download complete dataset (CSV) |
-| GET `/search/<query>/<format>` | Search courses |
+| GET `/search/<query>/<format>` | Search courses with basic filtering |
 | GET `/dashboard` | Interactive web interface |
+| GET `/advanced_search/ofs/<query>/<format>` | Search OFS-specific columns (ClassNumber, Room1, Days1, Enrollment, MeetingDates1, Type) |
+| GET `/advanced_search/enrollment/<query>/<format>` | Search enrollment-specific columns (ClassNumber, Days1, Enrollment, EnrollmentLimit, Status, Title) |
+
+## Detailed Usage Examples
+
+### Basic Data Operations
+```bash
+# Get welcome message
+curl http://localhost:5002/
+# Response: {"message": "Lou's List App is Running!"}
+
+# Fetch fresh data
+curl http://localhost:5002/fetch
+# Response: {"message": "Data fetched successfully"}
+
+# Get all data
+curl http://localhost:5002/data
+# Response: {"data": [{course1}, {course2}, ...]}
+
+# Download CSV
+curl http://localhost:5002/getcsv -O courses.csv
+```
+
+### Search Operations
+```bash
+# Basic search (JSON)
+curl http://localhost:5002/search/CS1110/json
+# Response: {"results": [{matched_courses}]}
+
+# OFS search for specific building
+curl http://localhost:5002/advanced_search/ofs/Rice%20Hall/json
+# Response: {"results": [{building_specific_data}]}
+
+# Find courses with open enrollment
+curl http://localhost:5002/advanced_search/enrollment/OPEN/json
+# Response: {"results": [{open_courses}]}
+```
+
+## Column Specifications
+
+### OFS Search Columns
+- ClassNumber
+- Room1
+- Days1
+- Enrollment
+- MeetingDates1
+- Type
+
+### Enrollment Search Columns
+- ClassNumber
+- Days1
+- Enrollment
+- EnrollmentLimit
+- Status
+- Title
 
 ## 💻 Tech Stack
 
