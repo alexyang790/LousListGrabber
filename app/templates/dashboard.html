@@ -28,6 +28,11 @@
     <div class="container mt-4">
         <h1 class="mb-3">Lou's List Dashboard</h1>
 
+        <!-- Add this right after the h1 tag -->
+        <div class="mb-3">
+            <h2 class="h5" id="semesterInfo">Current semester: Loading...</h2>
+        </div>
+
         <!-- Search Input and Buttons -->
         <div class="d-flex mb-3">
             <input id="searchInput" class="form-control mr-2" type="text" placeholder="Enter a keyword to search...">
@@ -66,6 +71,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // DOM Elements
         const searchButton = document.getElementById('searchButton');
         const searchInput = document.getElementById('searchInput');
         const resultsTable = document.getElementById('resultsTable');
@@ -75,27 +81,149 @@
         const ofsSearchButton = document.getElementById('ofsSearchButton');
         const enrollmentSearchButton = document.getElementById('enrollmentSearchButton');
 
-        // Generic Search Handler
+        // Create Fetch UI Elements
+        const fetchButton = document.createElement('button');
+        fetchButton.className = 'btn btn-primary mr-2';
+        fetchButton.textContent = 'Fetch Latest Data';
+
+        const semesterSelect = document.createElement('select');
+        semesterSelect.className = 'form-control mr-2';
+        semesterSelect.style.width = 'auto';
+
+        const semesterLabel = document.createElement('label');
+        semesterLabel.textContent = 'Select Term: ';
+        semesterLabel.className = 'mr-2 mt-2';
+        semesterLabel.style.whiteSpace = 'nowrap';
+
+        // Semester Options
+        const semesters = [
+            { value: '1261', text: 'Winter 2026'},
+            { value: '1258', text: 'Fall 2025'},
+            { value: '1256', text: 'Summer 2025'},
+            { value: '1252', text: 'Spring 2025' },
+            { value: '1251', text: 'Winter 2025' },
+            { value: '1248', text: 'Fall 2024' },
+            { value: '1246', text: 'Summer 2024' },
+            { value: '1242', text: 'Spring 2024' },
+            { value: '1241', text: 'Winter 2024' },
+            { value: '1238', text: 'Fall 2023' },
+            { value: '1236', text: 'Summer 2023' },
+            { value: '1232', text: 'Spring 2023' },
+            { value: '1231', text: 'Winter 2023' }
+        ];
+
+        // Group semesters by year
+        const semesterOptGroup = {};
+        semesters.forEach(semester => {
+            const year = semester.text.split(' ')[1];
+            if (!semesterOptGroup[year]) {
+                semesterOptGroup[year] = document.createElement('optgroup');
+                semesterOptGroup[year].label = year;
+            }
+            const option = document.createElement('option');
+            option.value = semester.value;
+            option.textContent = semester.text;
+            semesterOptGroup[year].appendChild(option);
+        });
+
+        // Add optgroups to select
+        Object.values(semesterOptGroup).forEach(group => {
+            semesterSelect.appendChild(group);
+        });
+
+        // Insert fetch elements
+        const searchContainer = document.querySelector('.d-flex');
+        searchContainer.prepend(semesterSelect);
+        searchContainer.prepend(semesterLabel);
+        searchContainer.prepend(fetchButton);
+
+        // Generic search function
+        async function performSearch(endpoint) {
+            try {
+                const response = await fetch(endpoint);
+                if (!response.ok) {
+                    throw new Error('Search failed');
+                }
+                const data = await response.json();
+                
+                // Clear existing results
+                tableHeader.innerHTML = '';
+                resultsTable.innerHTML = '';
+
+                if (data.results && data.results.length > 0) {
+                    // Create headers
+                    const headers = Object.keys(data.results[0]);
+                    headers.forEach(header => {
+                        const th = document.createElement('th');
+                        th.textContent = header;
+                        tableHeader.appendChild(th);
+                    });
+
+                    // Create rows
+                    data.results.forEach(result => {
+                        const tr = document.createElement('tr');
+                        headers.forEach(header => {
+                            const td = document.createElement('td');
+                            td.textContent = result[header] || '-';
+                            tr.appendChild(td);
+                        });
+                        resultsTable.appendChild(tr);
+                    });
+
+                    // Update download links
+                    updateDownloadLinks(endpoint);
+                } else {
+                    // Show no results message
+                    const th = document.createElement('th');
+                    th.textContent = 'No Results';
+                    tableHeader.appendChild(th);
+                    
+                    const tr = document.createElement('tr');
+                    const td = document.createElement('td');
+                    td.textContent = 'No matching results found.';
+                    td.colSpan = '100%';
+                    tr.appendChild(td);
+                    resultsTable.appendChild(tr);
+                }
+            } catch (error) {
+                console.error('Search error:', error);
+                alert('Failed to perform search: ' + error.message);
+            }
+        }
+
+        // Event Listeners
         searchButton.addEventListener('click', async () => {
             const query = searchInput.value.trim();
             if (!query) {
                 alert('Please enter a search keyword.');
                 return;
             }
-            await performSearch(`/search/${query}/json`);
+            const encodedQuery = encodeURIComponent(query);
+            await performSearch(`/search/${encodedQuery}/json`);
         });
 
-        // Advanced Search: OFS
+        searchInput.addEventListener('keypress', async (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const query = searchInput.value.trim();
+                if (!query) {
+                    alert('Please enter a search keyword.');
+                    return;
+                }
+                const encodedQuery = encodeURIComponent(query);
+                await performSearch(`/search/${encodedQuery}/json`);
+            }
+        });
+
         ofsSearchButton.addEventListener('click', async () => {
             const query = searchInput.value.trim();
             if (!query) {
                 alert('Please enter a search keyword for OFS search.');
                 return;
             }
-            await performSearch(`/advanced_search/ofs/${query}/json`, ["ClassNumber", "Room1", "Days1", "Enrollment", "MeetingDates1", "Type"]);
+            await performSearch(`/advanced_search/ofs/${query}/json`);
         });
 
-        // Advanced Search: Enrollment
         enrollmentSearchButton.addEventListener('click', async () => {
             const query = searchInput.value.trim();
             if (!query) {
@@ -105,55 +233,21 @@
             await performSearch(`/advanced_search/enrollment/${query}/json`);
         });
 
-        // Perform Search and Update Table
-        async function performSearch(endpoint, customOrder = null) {
+        fetchButton.addEventListener('click', async () => {
             try {
-                const response = await fetch(endpoint);
+                const selectedTerm = semesterSelect.value;
+                const response = await fetch(`/fetch/${selectedTerm}`);
                 if (!response.ok) {
-                    throw new Error('Error fetching data');
+                    throw new Error('Failed to fetch data');
                 }
-
                 const data = await response.json();
-                if (!data.results || data.results.length === 0) {
-                    updateTable([], customOrder);
-                    alert('No matching results found.');
-                    return;
-                }
-
-                updateTable(data.results, customOrder);
-                updateDownloadLinks(endpoint);
+                alert(`Data fetched successfully!\nSemester: ${semesters.find(s => s.value === selectedTerm).text}\nDates: ${data.semester_dates}`);
+                await updateSemesterInfo();
             } catch (error) {
-                console.error(error);
-                alert('Failed to fetch data. Please try again later.');
+                console.error('Fetch error:', error);
+                alert('Failed to fetch data: ' + error.message);
             }
-        }
-
-        // Update Table
-        function updateTable(data, customOrder = null) {
-            resultsTable.innerHTML = '';
-            tableHeader.innerHTML = '';
-
-            if (data.length > 0) {
-                const headers = customOrder || Object.keys(data[0]);
-                headers.forEach(header => {
-                    const th = document.createElement('th');
-                    th.textContent = header;
-                    tableHeader.appendChild(th);
-                });
-
-                data.forEach(row => {
-                    const tr = document.createElement('tr');
-                    headers.forEach(header => {
-                        const td = document.createElement('td');
-                        td.textContent = row[header] || '-'; // Handle undefined or null values
-                        tr.appendChild(td);
-                    });
-                    resultsTable.appendChild(tr);
-                });
-            } else {
-                resultsTable.innerHTML = '<tr><td colspan="100%">No matching results found.</td></tr>';
-            }
-        }
+        });
 
         // Update Download Links
         function updateDownloadLinks(endpoint) {
@@ -161,6 +255,27 @@
             downloadCsv.href = csvEndpoint;
             downloadJson.href = endpoint;
         }
+
+        // Update Semester Info
+        async function updateSemesterInfo() {
+            try {
+                const response = await fetch('/data');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                if (data.data && data.data.length > 0) {
+                    const semesterDates = data.data[0].MeetingDates1 || 'Unknown dates';
+                    document.getElementById('semesterInfo').textContent = `Current semester: ${semesterDates}`;
+                }
+            } catch (error) {
+                console.error('Error fetching semester info:', error);
+                document.getElementById('semesterInfo').textContent = 'Current semester: Unknown';
+            }
+        }
+
+        // Initialize semester info on page load
+        updateSemesterInfo();
     </script>
 </body>
 </html>

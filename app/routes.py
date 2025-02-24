@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, request, render_template
 from app.services import fetch_data_service, search_data_service, display_sample_data, get_csv_service, advanced_search_service
 from flasgger import swag_from
+from urllib.parse import unquote
 
 # Create a blueprint for routes
 routes = Blueprint("routes", __name__)
@@ -17,7 +18,17 @@ def home():
     return jsonify({'message': "Lou's List App is Running!"})
 
 @routes.route('/fetch')
+@routes.route('/fetch/<term>')
 @swag_from({
+    'parameters': [
+        {
+            'name': 'term',
+            'in': 'path',
+            'type': 'integer',
+            'required': False,
+            'description': 'Academic term to fetch data for (default: 1252, spring 2025)'
+        }
+    ],
     'responses': {
         200: {
             'description': 'Fetch data from Lou\'s List and save it as a CSV file.',
@@ -27,8 +38,10 @@ def home():
         }
     }
 })
-def fetch_data():
-    return fetch_data_service()
+def fetch_data(term=None):
+    if term is None:
+        term = 1252  # Default to spring 2025
+    return fetch_data_service(term)
 
 @routes.route('/data')
 @swag_from({
@@ -95,7 +108,9 @@ def get_csv():
     }
 })
 def search_data(query, return_format):
-    return search_data_service(query, return_format)
+    # URL decode the query parameter
+    decoded_query = unquote(query)
+    return search_data_service(decoded_query, return_format)
 
 @routes.route('/dashboard')
 @swag_from({
